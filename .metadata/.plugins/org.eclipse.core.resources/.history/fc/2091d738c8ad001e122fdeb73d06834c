@@ -1,0 +1,40 @@
+package super_;
+
+public class Airplane_Main {
+
+	public static void main(String[] args) {
+		Airplane ap1 = new Airplane("국내선");
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+		
+		ap1.fly();
+		ap1.showStatus();
+
+	}
+
+}

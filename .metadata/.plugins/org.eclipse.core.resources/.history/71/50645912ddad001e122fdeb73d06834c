@@ -1,0 +1,5 @@
+package accessmodifier.member.pack1;
+
+public class B {
+
+}

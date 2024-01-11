@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day02.GarvageCollectorTest_Main&apos; to &apos;GarbageCollectorTest_Main&apos;&#x0D;&#x0A;- Original project: &apos;day02&apos;&#x0D;&#x0A;- Original element: &apos;day02.GarvageCollectorTest_Main&apos;&#x0D;&#x0A;- Renamed element: &apos;day02.GarbageCollectorTest_Main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GarvageCollectorTest_Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day02{GarvageCollectorTest_Main.java[GarvageCollectorTest_Main" matchStrategy="1" name="GarbageCollectorTest_Main" qualified="false" references="true" similarDeclarations="false" stamp="1704263290638" textual="false" version="1.0"/>
+</session>

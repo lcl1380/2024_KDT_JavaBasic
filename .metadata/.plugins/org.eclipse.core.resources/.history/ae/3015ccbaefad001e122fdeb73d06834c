@@ -1,0 +1,41 @@
+package encapsulation.good;
+
+public class MyBirthDay {
+		// 은닉(캡슐화) 시 변수는 무조건 private로 처리
+		private int year;
+		private int month;
+		private int day;
+		
+		// alt + shift + s 또는 마우스 우클릭 : source - generate constructor using fields 선택
+		public MyBirthDay(int year, int month, int day) {
+			this.year = year;
+			this.month = month;
+			this.day = day;
+			
+			/**
+			 * 은닉된 변수에 접근하기 위해서는
+			 * 클래스 설계 시 미리 설정해둔 setter/getter 메서드를 이용하여
+			 * 데이터에 접근해야 한다. 
+			 * 
+			 * setter 메서드 선언 :
+			 * setter 메서드는 은닉변수에 값을 저장(세팅)하기 위해 선언한다.
+			 * 메서드의 접근제한자는 public으로 설정하고, 이름은 일반적으로 set + 변수명으로 지정한다.**/
+			
+		    public void setDay(int day) {
+		        this.day = validateDay(day);
+		    }
+
+		    private int validateDay(int day) {
+		        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+
+		        if (day < 1 || (day > 28 && !isLeapYear) || (day > 29 && isLeapYear) || (day > 31)) {
+		            return 1;
+		        } else {
+		            return day;
+		        }
+		    }
+		    
+		    void showDateInfo() {
+				System.out.println("내 생일은 " + year + "년 " + month + "월 " + day + "일 이니까 선물을 준비하세요!!!");
+			}
+}

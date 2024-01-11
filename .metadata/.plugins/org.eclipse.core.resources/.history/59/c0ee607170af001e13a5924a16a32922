@@ -1,0 +1,10 @@
+package inheritance;
+
+public class Monster {
+		// 모든 몬스터 클래스의 부모타입으로 설계된 클래스
+		private String name; // 다형성 특성상 몬스터 종류를 식별하기 위한 변수
+		private int hp;
+		private int atk;
+		private int def;
+		private int exp; // 경험치도 몬스터별로 다 다르기 때문에 종류별로 기입
+}

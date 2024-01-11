@@ -1,0 +1,30 @@
+package heterogeneous;
+
+public class MainClass {
+    public static void main(String[] args) {
+	    // 기본형 자료형으로 만든 배열 예시
+	    // 다른 자료형을 넣을 수 없음
+//	    int[] iArr = {1, 2, 3, 4, "안녕하세용"}; // int형 배열에 String을 넣을 수 없음
+	    
+	    // A 자료형의 힙 주소를 배열로 저장가능한 배열 생성
+	    A[] aArr = new A[2];
+	    
+	    A a1 = new A();
+	    A a2 = new A();
+	    
+	    aArr[0] = a1;
+	    aArr[1] = a2;
+	    
+	    // 모든 클래스의 부모클래스읜 Object 배열을 선언하면
+	    // 다형성 원리(부모 객체를 요구하는 자리에 자식 타입을 대입 가능함)에 의해
+	    // 모든 자료를 다 대입할 수 있음.
+	    Object[] oArr = new Object[2];
+	    
+	    B b1 = new B();
+	    //aArr[1] = b1; // A타입을 요구하는 배열에 B타입 대입 불가
+	    oArr[0] = b1; //B타입
+	    oArr[1] = a2; //A타입
+	    
+	    oArr[1] = 100; // Object 배열에는 기본형 자료도 대입가능
+    }
+}
