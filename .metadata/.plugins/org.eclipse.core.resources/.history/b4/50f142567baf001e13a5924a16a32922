@@ -1,8 +1,0 @@
-package heterogeneous;
-
-public class MainClass {
-    // 기본형 자료형으로 만든 배열 예시
-    // 다른 자료형을 넣을 수 없음
-    int[] iArr = {1, 2, 3, 4, '5', "안녕하세용"}; // int형 배열에 char나 String을 넣을 수 없음
-    
-}

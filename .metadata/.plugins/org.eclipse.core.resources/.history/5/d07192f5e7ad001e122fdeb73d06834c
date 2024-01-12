@@ -1,6 +1,0 @@
-package accessmodifier.class_;
-
-// 같은 패키지 내부끼리만 참조 가능
-class A {
-
-}
